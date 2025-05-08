@@ -15,11 +15,71 @@
     </div>
     <main>
         <section>
-            <p>We experimented with the efficiency of LLMs in brainstorming new interesting angles or ideas for follow-up stories. For this assignment, we focused on creating specific steps or a narrative that will be the baseline we’ll use to test on each LLMS. Initially, for this assignment, we tested these steps on one LLM (ChatGPT), recorded a scenario, and evaluated each response we got from ChatGPT following each step.</p>
+            <p>We experimented with the efficiency of LLMs in brainstorming new interesting angles or ideas for follow-up stories. For this assignment, we focused on creating specific steps or a narrative that will be the baseline we’ll use to test on each LLMS. Initially, for this assignment, we tested these steps on one LLM (ChatGPT and Gemini), recorded a scenario, and evaluated each response we got following each step.</p>
         </section>
 
         <section>
-            <h2>Presentation Slides go here..... (this is just mock up)</h2>
+            <h2>I. Introduction</h2>
+            <p>
+                First and foremost, what are LLMs? LLMs or Large Language Models are AI systems capable of understanding and generating human language. LLMs are trained on a massive dataset of text and can be used in a variety of tasks, including ones related to journalistic work. The widely used LLMs include ChatGPT, Gemini, Llama, Claude, etc.
+            </p>
+            <p>
+                When talking about LLMs, prompts are also a crucial part as they provide the necessary context and instructions for LLMs to generate accurate and relevant responses. Well-crafted prompts can improve the quality and coherence of the output. Bad prompting makes it harder for an LLM to deliver useful, accurate, or tailored results. It usually happens when instructions are too vague, too broad, or too ambiguous. You must clearly tell the LLM the task, your audience, and tone. Do not assume it knows your goals.
+            </p>
+            <figure class="illustration-container15">
+                <img src="intro1.jpg" alt="Prompt and response example in ChatGPT" class="illustration15">
+                <figcaption>Figure: Example of a prompt and response using ChatGPT to name a pet peacock.</figcaption>
+            </figure>
+        </section>
+        
+        <section>
+            <h3>How to Craft Your Prompts</h3>
+            <ul>
+                <li><strong>Be specific and direct:</strong> Vague prompts get vague answers. Instead of saying “help me write a pitch,” say “write me a 100-word pitch to my editor about traffic lights in New York City.”</li>
+                <li><strong>Provide context:</strong> LLMs perform better when they know the background. Keep reminding them of key facts throughout the conversation.</li>
+                <li><strong>Define the format:</strong> Tell the LLM what format you want — AP Style, active voice, JSON, bullet points, paragraph, etc.</li>
+                <li><strong>Set constraints:</strong> Limit word count, ask it to avoid specific phrases, or restrict it to only use your materials.</li>
+                <li><strong>Ask questions:</strong> Don’t hesitate to follow up or refine your prompt if the result isn’t right.</li>
+                <li><strong>Use examples:</strong> If you want a specific tone, style, or structure, show an example.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Examples of Words or Phrases to Avoid</h3>
+            <table class="avoid-table">
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Why it is bad</th>
+                        <th>Better alternative</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>“Make it sound good”</td>
+                        <td>Subjective and unclear. The LLM doesn’t know what you think sounds good</td>
+                        <td>“Make this stronger by using more active verbs”</td>
+                    </tr>
+                    <tr>
+                        <td>“Fix this”</td>
+                        <td>This doesn’t say what is wrong. It can’t read your mind</td>
+                        <td>“Rewrite this to sound more (casual/professional) and use AP Style”</td>
+                    </tr>
+                    <tr>
+                        <td>“Help me with this”</td>
+                        <td>Lacks context and the LLM  doesn’t know what “this” is referring to</td>
+                        <td>“Write a headline for a story about school climate initiatives in Prince George’s County.”</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>II. How to ask LLMs for follow-up story ideas</h2>
+        </section>
+
+        <section>
+            <h3>Steps Flowchart</h3>
             <div style="overflow-x:auto; -webkit-overflow-scrolling: touch;">
                 <iframe 
                     src="https://docs.google.com/presentation/d/e/2PACX-1vSuTyKiTVujwrX6qA_KK8mbX_pNBy0zG4NlOFrhxZ7YX1kzpPB0XduscBTDIJuSAe0cSbi-uJCilmsY/pubembed?start=false&loop=false&delayms=3000" 
@@ -31,36 +91,202 @@
                     webkitallowfullscreen>
                 </iframe>
             </div>
+            <p class="slide-caption">Click this presentation to explore the summary of all key points on this website and another example of use case of these steps.</p>
         </section>
 
         <section>
-            <h2>Specific Steps</h2>
+            <h3>Specific Steps</h3>
             <p>
                 <strong>1. Determine the story you want to generate a follow-up idea for.</strong><br>
                 <em>You need to determine the story first to set up the scope or areas of ideas you want LLMs to explore, and prevent responses that may be too general.</em><br><br>
                 <strong>2. Upload the original story and ask LLMs to give you a summary of the story.</strong><br>
-                <em>Asking LLMs to summarize the story is a way to test and make sure they actually read the original story and understand its context.</em><br><br>
+                <em>Asking LLMs to summarize the story is a way to test and make sure they actually read the original story and understand its context.</em><br>
+                <div class="prompt-callout">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li><b>“Read this article and summarize it:”</b> <em>[insert link]</em></li>
+                                <li><b>“Could you fact-check this news article?”</b> <em>[insert link]</em></li>
+                                <li><b>“Please extract key points from this article:”</b> <em>[insert link]</em></li>
+                                <li><b>“What are the main claims and evidence in this article?”</b> <em>[insert link]</em></li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Here’s a link, tell me what you think”</li>
+                                <li>“React to this”</li>
+                                <li>“What do you know about this story?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>3. Tell the LLMs about the context of the task you want them to perform. For example, you could input this prompt: “I’m looking for a hard-news angle to follow up on the story I’ve just given you.”</strong><br>
-                <em>Giving LLMs the context, like what types of angles you want them to come up with, could help narrow down the pool of ideas they would give you. Using the word “news” in the prompt would help LLMs understand that you want specific ideas that contain the newsworthy elements, not just general ideas.</em><br><br>
+                <em>Giving LLMs the context, like what types of angles you want them to come up with, could help narrow down the pool of ideas they would give you. Using the word “news” in the prompt would help LLMs understand that you want specific ideas that contain the newsworthy elements, not just general ideas.</em><br>
+                <div class="prompt-callout2">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split2">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“Can you suggest some possible follow-up angles that could develop the story further?”</li>
+                                <li>“I want to pitch a follow-up for my newsroom — ideally something with a fresh angle or unresolved question. Can you help me brainstorm ideas for a compelling next article?”</li>
+                                <li>“Can you help me come up with follow-up questions or angles — maybe ones that point to deeper issues, new stakeholders, or consequences?”</li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Can you give me follow-up ideas for this?”</li>
+                                <li>“Can you summarize and follow-up this and tell me more?”</li>
+                                <li>“Give me more about this.”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>4. Ask for follow-up ideas from the perspective of a position on the news staff. For example, you could use a prompt like: “Give me follow-up ideas from the perspective of a sports editor.”</strong><br>
-                <em>This kind of specification in the prompt will help LLMs be aware that they have authority over the topic they’re asked to provide. It helps their answers be more on-topic and on-theme.</em><br><br>
+                <em>This kind of specification in the prompt will help LLMs be aware that they have authority over the topic they’re asked to provide. It helps their answers be more on-topic and on-theme.</em><br>
+                <div class="prompt-callout3">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split3">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“I want the ideas to come from <b>perspective of a sports editor</b>  — meaning follow-ups should focus on sports-related angles, implications for athletes, leagues, or fan communities. Can you give me some ideas based on that?”</li>
+                                <li>“Pretend you’re <b>a sports editor at a major news outlet</b> reading this article. What kind of follow-up stories would you assign to your reporters?”</li>
+                                <li>“Can you give me follow-up ideas from three different editorial perspectives <b>— a sports editor, a health reporter, and a data journalist?”</b></li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Can you give me follow-up ideas for this story, maybe as a sports person?”</li>
+                                <li>“Give me some follow-up story ideas but like make them more sporty.”</li>
+                                <li>“From the view of a sports editor, what do you think?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>5. Ask for creative or weird follow-up ideas.</strong><br>
-                <em>Sometimes, LLMs’ responses could get stuck in a rut of the same types of ideas that don’t illustrate much creativity. You could use this step to urge them to give different ideas that are more ambitious or provocative.</em><br><br>
+                <em>Sometimes, LLMs’ responses could get stuck in a rut of the same types of ideas that don’t illustrate much creativity. You could use this step to urge them to give different ideas that are more ambitious or provocative.</em><br>
+                <div class="prompt-callout4">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split4">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“I want ideas that are <b>creative and unexpected, but still realistic, newsworthy, and connected</b> to the original story — nothing too frivolous or speculative. Could you push the angles a bit while keeping them grounded in journalistic relevance?”</li>
+                                <li>“I’m looking for <b>follow-up angles that go beyond the obvious,</b> not just predictable next steps. They should still be appropriate for publication — nothing gimmicky. Think along the lines of deeper context, overlooked consequences, or fresh reporting paths.”</li>
+                                <li>“Give me 5 follow-up ideas based on this article. Make sure the ideas meet these criteria: (1) <b>Not redundant</b> with the original article. (2) <b>Have potential sources or data to pursue.</b> (3) <b>Tap into underreported angles or gaps.</b> (4) <b>Can appeal to a general audience, not just specialists.”</b></li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Can you give me some cool and interesting follow-up ideas?”</li>
+                                <li>“I want something wild, but also realistic.”</li>
+                                <li>“What’s next for this story?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>6. Ask LLMs to explain why each idea it generates is relevant or good.</strong><br>
-                <em>By asking the LLM to reflect on why its ideas are valuable, the user can get a better understanding of how the LLM generates ideas and using that knowledge, write better prompts in the future.</em><br><br>
+                <em>By asking the LLM to reflect on why its ideas are valuable, the user can get a better understanding of how the LLM generates ideas and using that knowledge, write better prompts in the future.</em><br>
+                <div class="prompt-callout5">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split5">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“For each story idea, <b>explain why it would be a strong angle to pursue</b> in terms of newsworthiness, timeliness, or audience interest.”</li>
+                                <li>“For each story idea, include a short <b>rationale:</b> what makes this a compelling, fresh, or urgent angle for a newsroom to pursue?”</li>
+                                <li>“For each story idea, please explain <b>why it works journalistically</b> — e.g., does it fill a reporting gap, expose an overlooked impact, offer a new perspective, or align with public interest?”</li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Can you give me some follow-up ideas and tell me why?”</li>
+                                <li>“Give me ideas and comment on them.”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>7. Narrow the list of ideas LLMs gave down to the ideas you’re mainly interested in, maybe one or two ideas.</strong><br>
                 <em>This keeps the conversation simpler and lets the LLM hone in on specific ideas more deeply, rather than providing surface-level advice.</em><br><br>
                 <strong>8. Ask LLMs for potential pitfalls for each idea you selected, or why they might be bad</strong><br>
-                <em>AI is more easily self-reflective than most humans, which means it’s good at spotting places you could run into reporting errors or ethical problems in a story idea. Even asking for critiques on an idea you’ve come up with yourself is helpful, as we’re less objective than LLMs.</em><br><br>
+                <em>AI is more easily self-reflective than most humans, which means it’s good at spotting places you could run into reporting errors or ethical problems in a story idea. Even asking for critiques on an idea you’ve come up with yourself is helpful, as we’re less objective than LLMs.</em><br>
+                <div class="prompt-callout6">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split6">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“For each idea, please also explain <b>any risks, challenges, or pitfalls</b> that might come with pursuing it — such as sourcing difficulty, legal sensitivity, or audience backlash.”</li>
+                                <li>“Could you give me a few possible directions to pursue, and for each idea, note <b>any potential drawbacks or concerns</b> an editor or reporter should be aware of?”</li>
+                                <li>“For each idea, briefly explain both (1) why it could work and (2) <b>what might make it difficult or risky to report</b> — such as thin sourcing, limited public data, or political sensitivity.”</li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Can you give me ideas and any problems?”</li>
+                                <li>“Give me story ideas and any reasons that maybe they won’t happen?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>9. Ask for the LLM to find similar stories on the internet to the ideas it proposed.</strong><br>
-                <em>This will let the user find where the LLM got its idea, make sure the ideas aren’t redundant, and find inspiration for how to put the story together.</em><br><br>
+                <em>This will let the user find where the LLM got its idea, make sure the ideas aren’t redundant, and find inspiration for how to put the story together.</em><br>
+                <div class="prompt-callout7">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split7">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“Based on the follow-up idea you gave me about [e.g., athlete mental health post-Olympics], can you <b>search to see if this angle has already been covered</b> recently by major outlets like ESPN, The Guardian, or the AP?”</li>
+                                <li>“For each of the 3 follow-up ideas you suggested for this story, please <b>search the web to see if there are similar stories already published</b> — especially in national or regional news sources.”</li>
+                                <li>“Here are 4 follow-up story ideas I’m considering. Can you <b>check if any of them have already been reported,</b> and flag which ones feel <b>overdone vs. still fresh</b> based on what’s out there?”</li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“Have these stories been done before?”</li>
+                                <li>“Are there similar things out there?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
                 <strong>10. Ask LLMs to critique the pitch like an editor.</strong><br>
-                <em>This is similar to the pitfalls, but adding the editor angle, as described in number four, gives you more pointed feedback.</em><br><br>
+                <em>This is similar to the pitfalls, but adding the editor angle, as described in number four, gives you more pointed feedback.</em><br>
+                <div class="prompt-callout8">
+                    <h4>🧠 Examples of Recommended vs. Weak Prompts</h4>
+                    <div class="prompt-split8">
+                        <div class="good-prompts">
+                            <strong>Recommended Prompts</strong>
+                            <ul>
+                                <li>“For each idea, explain the <b>potential editorial or reputational risks</b> — from the perspective of <b>an editor-in-chief</b> who has to think about legal exposure, brand credibility, and public backlash?”</li>
+                                <li>“Imagine you’re a <b>standards & ethics editor</b> reviewing possible follow-up ideas. For each idea, point out <b>any red flags</b> you would raise — whether it’s about fairness, source integrity, or potential harm.”</li>
+                                <li>“From the point of view of a <b>section editor (e.g. sports, science, politics)</b> responsible for both output and tone, what are some <b>potential pitfalls</b> with these kinds of stories — including audience trust, editorial framing, or sourcing credibility?”</li>
+                            </ul>
+                        </div>
+                        <div class="bad-prompts">
+                            <strong>Prompts to Avoid</strong>
+                            <ul>
+                                <li>“What would someone in charge maybe not like about these stories?”</li>
+                                <li>“Can you tell me what could make editors nervous or worried?”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
             </p>
         </section>
 
         <section>
-            <h2>Scenario and Evaluation</h2>
+            <h2>III. Scenario and Evaluation</h2>
             <p>
                 We’re using Chat GPT and completing this from the perspective of reporters looking to follow up on this story: 
                 <a href="https://www.washingtonpost.com/food/2025/04/17/easter-egg-alternatives-dyed-potatoes-jello/" target="_blank">Washington Post: Easter Egg Alternatives</a><br><br>
@@ -68,74 +294,76 @@
                 Here’s a link to our conversation, but we’ll walk you through it: 
                 <a href="https://chatgpt.com/share/68031712-1520-8010-834b-e06b6a298bc0" target="_blank">ChatGPT Conversation</a><br><br>
 
-                1. When we uploaded a story about easter egg alternatives to ChatGPT, we wanted to make sure first that ChatGPT had actually read the article. Hence, we had it summarize the story, and as it could give us all the key points in this article accurately, we were sure that ChatGPT had read this article and was ready to proceed with other steps.<br><br>  
-                <div class="illustration-container">
-                    <img src="insert_pic1.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration">
-                </div>
-                <div class="illustration-container2">
-                    <img src="insert_pic2.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration2">
-                </div>
+                1. When we uploaded a story about easter egg alternatives to ChatGPT, we wanted to make sure first that ChatGPT had actually read the article. Hence, we had it summarize the story, and as it could give us all the key points in this article accurately, we were sure that ChatGPT had read this article and was ready to proceed with other steps.<br><br>
+                <figure class="illustration-container16">
+                    <img src="edit1.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration16">
+                </figure>
                 2. Next, we provided context that we were looking for entertaining angles to follow up on that story, and prompted ChatGPT to give follow-up story ideas from the perspective of a lifestyle editor. ChatGPT produced six ideas that were quite inapplicable.<br><br> 
                 
                 Some of them seemed out of the scope of what we expected to be valid ideas or even sounded frivolous, such as inviting readers to share their ideas of unconventional dyed Easter eggs or what other household items that you can dye, while some of them seemed to be redundant to the issues that the original story had already covered, such as exploring why some alternative dyed eggs failed.<br><br>
-                <div class="illustration-container3">
-                    <img src="insert_pic3.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration3">
-                </div>
+                <figure class="illustration-container17">
+                    <img src="edit2.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration17">
+                </figure>
                 We inferred that words like “entertaining” or “lifestyle” are attributed to this sort of response. We may fix this issue by giving ChatGPT more context of what kind of use case of the ideas we are asking for, for example, tell it we want to use this idea to write a feature story for the newsroom.<br><br>  
-                <div class="illustration-container4">
-                    <img src="insert_pic4.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration4">
-                </div>
+                <figure class="illustration-container18">
+                    <img src="edit3.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration18">
+                </figure>
                 3. As we had not gotten a usable idea yet, we told ChatGPT that the ideas it gave were redundant and asked for ones that were different from what was already in the article.<br><br> 
-                <div class="illustration-container5">
-                    <img src="insert_pic5.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration5">
-                </div>
+                <figure class="illustration-container19">
+                    <img src="edit4.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration19">
+                </figure>
                 ChatGPT still gave a bunch of unapplicable suggestions, but also one we considered a good idea, looking at the history of Easter eggs and egg hunts, and why they’ve stuck around. This is an idea that is plausible for a feature story for the actual newsroom, so we picked this one.<br><br> 
-                <div class="illustration-container7">
-                    <img src="insert_pic7.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration7">
-                </div>
+                <figure class="illustration-container20">
+                    <img src="edit5.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration20">
+                </figure>
                 4. Then, we asked ChatGPT to reflect why the idea we selected was good or relevant. In its response, we somewhat disagreed with its rationale. However, it showed that the LLM was looking at it from an angle of entertainment, rather than news, as we framed it to be in the previous prompt, and that was a good thing to be aware of.<br><br> 
-                <div class="illustration-container8">
-                    <img src="insert_pic8.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration8">
-                </div>
-                <div class="illustration-container9">
-                    <img src="insert_pic9.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration9">
-                </div>
+                <figure class="illustration-container21">
+                    <img src="edit6.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration21">
+                </figure>
+                <figure class="illustration-container22">
+                    <img src="edit7.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration22">
+                </figure>
                 5. We also asked ChatGPT for the potential pitfalls it saw for covering this story from the perspective of an editor listening to the story. The concerns it posed were pretty solid and worth keeping in mind. It suggested that covering this angle could be too academic and dry, with no real takeaway to alienate readers by blurring religious lines in the piece. This could be an important consideration for someone planning to report on the story.<br><br> 
-                <div class="illustration-container10">
-                    <img src="insert_pic10.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration10">
-                </div>
-                <div class="illustration-container11">
-                    <img src="insert_pic11.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration11">
-                </div>
-                <div class="illustration-container12">
-                    <img src="insert_pic12.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration12">
-                </div>
+                <figure class="illustration-container23">
+                    <img src="edit8.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration23">
+                </figure>
+                <figure class="illustration-container24">
+                    <img src="edit9.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration24">
+                </figure>
                 6. For the last prompt, we asked ChatGPT to search for similar stories that may cover this same idea and critique this pitch again, as it was an editor from a real newsroom.<br><br> 
-                <div class="illustration-container13">
-                    <img src="insert_pic13.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration13">
-                </div>
-                <div class="illustration-container14">
-                    <img src="insert_pic14.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration14">
-                </div>
+                <figure class="illustration-container25">
+                    <img src="edit10.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration25">
+                </figure>
+                <figure class="illustration-container26">
+                    <img src="edit11.jpg" alt="ChatGPT summarizing Easter Egg article" class="illustration26">
+                </figure>
                 This prompt confused the LLM and didn’t get what we wanted. However, it did provide more pointed concerns about the potential follow-up story from the vantage point of an editor.<br><br>  
             </p>
         </section>
 
         <section>
-            <h2>Examples: How to Apply the Steps with different LLMs</h2>
+            <h2>IV. Examples: How to Apply the Steps with different LLMs</h2>
             <ul class="example-list">
                 <li>
                     <a href="https://docs.google.com/document/d/11sUb9abyMPyK9-gppQpFHJxF_1V4Ehnjjzq-9UmQt68/edit?tab=t.iu3wbbuom8p0" target="_blank">
                         Asking ChatGPT
-                    </a> for follow-up ideas for this story: 
+                    </a> for follow-up ideas for the lifestyle story: 
                     <a href="https://www.washingtonpost.com/food/2025/04/17/easter-egg-alternatives-dyed-potatoes-jello/" target="_blank">
                         Washington Post: Easter Egg Alternatives
                     </a>
                 </li>
                 <li>
+                    <a href="https://docs.google.com/document/d/11sUb9abyMPyK9-gppQpFHJxF_1V4Ehnjjzq-9UmQt68/edit?tab=t.da6omeylowaq" target="_blank">
+                        Asking ChatGPT
+                    </a> for follow-up ideas for the hard-news story: 
+                    <a href="https://www.nytimes.com/2025/05/04/us/politics/trump-ivy-league.html" target="_blank">
+                        The New York Times: Trump Battles Academia, but Especially the Ivy League
+                    </a>
+                </li>
+                <li>
                     <a href="https://docs.google.com/document/d/11sUb9abyMPyK9-gppQpFHJxF_1V4Ehnjjzq-9UmQt68/edit?tab=t.jjbatx2ugfr9" target="_blank">
                         Asking Gemini
-                    </a> for follow-up ideas for this story: 
+                    </a> for follow-up ideas for the hard-news story: 
                     <a href="https://apnews.com/article/vatican-pope-francis-dead-01ca7d73c3c48d25fd1504ba076e2e2a" target="_blank">
                         AP: Pope Francis Death Hoax
                     </a>
@@ -143,6 +371,28 @@
             </ul>
         </section>
         
+        <section class="prompt-callout9">
+            <h3>📝 General Characteristics and Constraints of ChatGPT vs. Gemini</h3>
+            <div class="prompt-split9">
+                <div class="good-prompts">
+                    <strong>ChatGPT</strong>
+                    <ul>
+                        <li>Always eager and enthusiastic responses</li>
+                        <li>Should ask for it to have a critical eye (ex; review this  like you were an editor and tell me what to fix)</li>
+                        <li>Usually good at reading URL <em>(*other LLMs normally cannot read or somtimes do not read URL without explicit and clear instructions)</em></li>
+                    </ul>
+                </div>
+                <div class="bad-prompts">
+                    <strong>Gemini</strong>
+                    <ul>
+                        <li>Cannot produce photos or videos</li>
+                        <li>Tends to pushback more than Chat GPT and will sometimes give non-english outputs</li>
+                        <li>Struggles with cohesive long-form storytelling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section class="authors">
             <h2>Authors</h2>
             <p>Molecule Jongwilai, Sarah Meklir, Fiona Flowers, and Charlotte Kanner</p>
